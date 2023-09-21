@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        section{
+            text-align: center;
+            border: 1px solid lightblue;
+            
+        }
+        ul{
+            list-style: none;
+            padding: 0;
+        }
+        ul li{
+            cursor: pointer;
+        }
+        #inventario li{
+            display: inline-block;
+            margin-right: 10px;
+            
+        }
+        #inventario img{
+            width: 50px;
+            height: 50px;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <section>
+        <h1> ¡Hola! ¿Qué te gustaria comprar? </h1>
+        <ul>
+            <li onclick="comprar(vida)"> Vida extra</li>
+            <li onclick="comprar(espada)"> Espadas</li>
+            <li onclick="comprar(gemas)"> Gemas</li>
+        </ul>
+    </section>
+    
+    <section>
+        <h2> Mi invenatrio.</h2>
+        <ul id="inventario"></ul>
+        
+        <h2 id="plata"> Plata: <span></span></h2>
+    </section>
+        <script src="preentrega.js"></script>
+</body>
+</html>
